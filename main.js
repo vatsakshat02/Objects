@@ -52,7 +52,35 @@ function double(x){
     return x*2;
 }
 function binary(x){
-    return x.toString(2);
+    return x.toString(2);  //can be writtena s const output = arr.map(x) => x.toString(2)
 }
 const output = arr.map(binary);
 console.log(output);
+
+//FILter
+const fil = [5,1,3,2,6];
+
+function isODD(x){
+    return x % 2 === 0;
+}
+
+const dir = fil.filter(isODD);
+console.log(dir);
+
+//Reduce : used when you have to use all the values of array and compute them to return a single value 
+const red = fil.reduce(function(acc,curr){
+    acc = acc + curr;
+    return acc;
+},0);
+console.log(red);
+
+
+//to find the maximum number
+const max = fil.reduce(function(acc,curr){
+    if(acc<curr){
+        acc = curr;
+    }
+    return acc;
+},0)
+
+console.log(max);
