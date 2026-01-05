@@ -30,3 +30,13 @@ user.LogBlogs();
 // ]
 
 //you can access them using obj.title,obj.LastName
+
+console.log(Math) //for mathematical operations we have math object
+const area = 7.7;
+console.log(Math.round(area));
+console.log(Math.floor(area)); //return integer less than or equal to the number
+console.log(Math.trunc(area)); //trunk remove the number after decimal 
+console.log(Math.ceil(area)); //maximises the value turn 7 into 8
+
+//generate random numbers
+console.log(Math.round(Math.random()*100));
