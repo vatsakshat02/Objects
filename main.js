@@ -40,3 +40,19 @@ console.log(Math.ceil(area)); //maximises the value turn 7 into 8
 
 //generate random numbers
 console.log(Math.round(Math.random()*100));
+
+//primitive type are stored in stack and reference type are stored in heap
+//when we store in heap it created a pointer to the object in the stack
+
+//MAP functions
+const arr = [1,2,3,4,5]
+
+//to double it
+function double(x){
+    return x*2;
+}
+function binary(x){
+    return x.toString(2);
+}
+const output = arr.map(binary);
+console.log(output);
