@@ -111,3 +111,18 @@ console.log(ages);
 
 const first = exam.filter((x)=> x.age < 30).map((x) => x.firstname);
 console.log(first);
+
+//Hoisting in javaScript
+//hoisting is where you can access the variables and functions even before you initialised it
+getName();
+console.log(x);
+
+var x = 7;
+function getName(){
+    console.log('welcome to Zeekuworld')
+}
+
+//above is hoisting we are accessing the function and variable even before initialising them
+//in Javascript basically there are two phases 1st is memory allocation and second is execution so in the memory
+//allocation phase it assigns memory to all the variables and functions thats why in execution phase it is able
+//to perform hoisting
