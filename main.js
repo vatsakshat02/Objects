@@ -84,3 +84,30 @@ const max = fil.reduce(function(acc,curr){
 },0)
 
 console.log(max);
+
+const exam = [
+    {firstname:'akshat',lastname: 'vats', age:22},
+    {firstname:'dikshant',lastname: 'vats', age:28},
+    {firstname:'dev',lastname: 'malik', age:32},
+    {firstname:'bindra',lastname: 'raghav', age:22}
+];
+
+const name = exam.map(x => x.firstname + " " + x.lastname);
+console.log(name);
+
+//to find the age 
+const ages = exam.reduce(function(acc,curr){
+        if(acc[curr.age]){
+            acc[curr.age] = ++acc[curr.age];
+        }
+        else{
+            acc[curr.age] = 1;
+        }
+        return acc;
+},{})
+console.log(ages);
+
+
+
+const first = exam.filter((x)=> x.age < 30).map((x) => x.firstname);
+console.log(first);
