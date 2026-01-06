@@ -130,15 +130,6 @@ function getName(){
 //if you dont initialise a variable it will show not defined which means it is not in the memory space
 //whereas if you initialise it, it will show undefined that it is in the memory dk its value yet
 
-
-//we have call stack in java so the first item to get stored is global execution context (our window function)
-//after that when a function is invoked its function execution context is pushed onto the stack and removed 
-//when it has performed his method so now you may wonder what is FEC (Function Execution Context)
-//just like gec where memory allocation and execution phase occur here also these two phases occur in memory and 
-//it is pushed on the call stack and it will stay there until its process is completed then it will be popped off
-
-//and after the code is executed this global execution context is popped off and the call stack is free
-
 var x = 1;
 a();
 b();
@@ -152,3 +143,26 @@ function b(){
     var x = 100;
     console.log(x);
 }
+
+//we have call stack in java so the first item to get stored is global execution context (our window function)
+//after that when a function is invoked its function execution context is pushed onto the stack and removed 
+//when it has performed his method so now you may wonder what is FEC (Function Execution Context)
+//just like gec where memory allocation and execution phase occur here also these two phases occur in function and 
+//it is pushed on the call stack and it will stay there until its process is completed then it will be popped off
+
+//and after the code is executed this global execution context is popped off and the call stack is free
+
+
+//Objects 
+//it has 3 operations keys,values,entries. Basically in entries you are converting object into array for each key
+//which can be accessed through indexing 
+
+
+let p = Object.keys(user);
+console.log(p);
+
+let q = Object.values(user);
+console.log(q);
+
+let r = Object.entries(user);
+console.log(r);
