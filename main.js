@@ -158,11 +158,11 @@ function b(){
 //which can be accessed through indexing 
 
 
-let p = Object.keys(user);
+let p = Object.keys(user); //gives the keys
 console.log(p);
 
-let q = Object.values(user);
+let q = Object.values(user); //gives the value
 console.log(q);
 
-let r = Object.entries(user);
+let r = Object.entries(user); //return the whole object as an array for each key value pair
 console.log(r);
