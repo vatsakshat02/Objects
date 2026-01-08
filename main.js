@@ -52,7 +52,7 @@ function double(x){
     return x*2;
 }
 function binary(x){
-    return x.toString(2);  //can be writtena s const output = arr.map(x) => x.toString(2)
+    return x.toString(2);  //can be written as const output = arr.map(x) => x.toString(2)
 }
 const output = arr.map(binary);
 console.log(output);
@@ -166,3 +166,4 @@ console.log(q);
 
 let r = Object.entries(user); //return the whole object as an array for each key value pair
 console.log(r);
+
